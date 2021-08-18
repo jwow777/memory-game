@@ -1,0 +1,44 @@
+.app {
+  position: relative;
+  font-family: 'Arial', sans-serif;
+}
+
+.app__timer {
+  font-size: 20px;
+  text-align: center;
+}
+
+.app__container {
+  width: 700px;
+  height: 700px;
+  background-color: #ccc;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 15px;
+  padding: 15px;
+  perspective: 1200px;
+}
+
+.app__button-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  backdrop-filter: blur(7px);
+}
+
+.app__button {
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
